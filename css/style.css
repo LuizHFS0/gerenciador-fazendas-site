@@ -9,7 +9,7 @@ header {
     background-color: #4CAF50;
     padding: 0px 20px 0px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
 }
 nav {
     display: flex;
@@ -80,4 +80,41 @@ th {
     font-size: 18px;
     border: 0;
     border-bottom: 1px solid black;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-top:0;
+}
+
+.card p{
+    font-size:32px;
+    font-weight:bold;
+}
+
+form a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 0px 8px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+}
+form a:hover {
+    cursor: pointer;
 }

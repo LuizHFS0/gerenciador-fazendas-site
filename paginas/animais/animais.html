@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Fazendas</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Gerenciador de Animais</h1>
         <nav>
             <ul>
                 <li><a href="/paginas/dashboard.html" rel="next" target="_self">Dashboard</a></li>
-                <li><a href="/paginas/animais.html" rel="next" target="_self">Animais</a></li>
-                <li><a href="/paginas/maquinas.html" rel="next" target="_self">Máquinas</a></li>
-                <li><a href="/paginas/funcionarios.html" rel="next" target="_self">Funcionários</a></li>
-                <li><a href="/paginas/estoque.html" rel="next" target="_self">Estoque</a></li>
+                <li><a href="/paginas/animais/animais.html" rel="next" target="_self">Animais</a></li>
+                <li><a href="/paginas/maquinas/maquinas.html" rel="next" target="_self">Máquinas</a></li>
+                <li><a href="/paginas/funcionarios/funcionarios.html" rel="next" target="_self">Funcionários</a></li>
+                <li><a href="/paginas/estoque/estoque.html" rel="next" target="_self">Estoque</a></li>
             </ul>
         </nav>
     </header>
@@ -24,8 +26,8 @@
             <label for="pesquisar">Pesquisar:</label>
             <input type="text" id="pesquisar" placeholder="Pesquise um animal">
             <button type="submit">Pesquisar</button>
-            <button type="submit">Cadastrar</button>
-            <button type="submit">Informações</button>
+            <a href="/paginas/animais/cadastro.html" target="_self" rel="next">Cadastro</a>
+            <a href="/paginas/animais/informacoes.html" target="_self" rel="next">Informações</a>
             <button type="submit">Excluir</button>
         </form>
         <table class="animais tabela">
@@ -241,4 +243,5 @@
         </table>
     </main>
 </body>
+
 </html>
