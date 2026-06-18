@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Fazendas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #F8FAF5;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 0 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            background-color: aliceblue;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        main {
+            flex: 1;
+            padding: 10px 0;
+        }
+        section {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .secao {
+            margin: 20px 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #58ff5e;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+        }
+        footer {
+            margin-top: 6px;
+        }
+        .consultor {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+            background-color: #4CAF50;
+        }
+        .consultor form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .consultor input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .consultor button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2e7d32;
+            color: white;
+            cursor: pointer;
+        }
+        .consultor button:hover {
+            background-color: #1b5e20;
+        }
+        .contato {
+            background-color: #58ff5e;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        .contato ul {
+            padding-left: 20px;
+        }
+        @media (max-width: 768px) {
+            .consultor {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Fazendas</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/paginas/login.html" rel="next">
+                        Fazer Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="secao">
+            <h2>Quem somos?</h2>
+            <p>
+                A <strong>Fazenda Gerenciada</strong> é um site de gerenciamento
+                de fazendas criado em 2026 por
+                <strong>Luiz Henrique Félix da Silveira</strong>
+                com o intuito de ajudar fazendeiros a gerenciar sua fazenda de
+                maneira simples, deixando o lápis e papel de lado.
+                Com o sistema, é possível registrar entrada de animais,
+                plantações, produção de leite e muito mais.
+            </p>
+            <ul>
+                <li><a href="/paginas/animais.html">Animais</a></li>
+                <li><a href="/paginas/funcionarios.html">Funcionários</a></li>
+                <li><a href="/paginas/maquinas.html">Máquinas</a></li>
+            </ul>
+        </section>
+        <section class="secao">
+            <h2>Nossos recursos</h2>
+            <h3>Contamos em nosso sistema:</h3>
+            <ul>
+                <li>
+                    <strong>Sistema de Animais:</strong>
+                    Controle completo dos animais da fazenda.
+                </li>
+                <li>
+                    <strong>Sistema de Funcionários:</strong>
+                    Gerenciamento dos funcionários da fazenda.
+                </li>
+                <li>
+                    <strong>Sistema de Estoque:</strong>
+                    Controle de rações, remédios, leite e demais produtos.
+                </li>
+                <li>
+                    <strong>Sistema de Máquinas:</strong>
+                    Gerenciamento das máquinas e equipamentos.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="consultor">
+            <div>
+                <h2>Fale com um consultor!</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <label for="contato">Contato:</label>
+                    <input type="tel" name="contato" id="contato" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contato">
+                <h2>Entre em contato</h2>
+                <ul>
+                    <li><strong>Whatsapp:</strong> (38) 99995-4195</li>
+                    <li><strong>E-mail:</strong> luizhf2018@gmail.com</li>
+                </ul>
+                <p>
+                    © Todos os direitos reservados a
+                    Luiz Henrique Félix da Silveira
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
