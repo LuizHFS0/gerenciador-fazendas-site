@@ -48,7 +48,7 @@ header nav ul li:hover::after {
 }
 
 table {
-    width: 97%;
+    width: 94%;
     border-collapse: collapse;
 }
 
@@ -105,16 +105,24 @@ th {
     font-weight:bold;
 }
 
-form a {
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 20px;
+    min-height: 40px;
+
+    background-color: #2E7D32;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 7px;
-    font-size: 20px;
-    padding: 0px 8px;
-    padding-bottom: 2px;
-    margin-left: 10px;
-}
-form a:hover {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+
+    box-sizing: border-box;
     cursor: pointer;
 }

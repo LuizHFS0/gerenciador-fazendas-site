@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Fazendas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+            min-height:80vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .menu {
+            background-color: rgb(236, 236, 236);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 375px;
+            width: 300px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+        }
+        .links-cadastro{
+            text-decoration: none;
+            color: black;
+            background-color: darkgray;
+            border-radius: 15px;
+            border: 1px solid black;
+            padding: 10px;
+            display: block;
+            margin: 10px;
+            font-size: 35px;
+        }
+        .links-cadastro:hover {
+            background-color: rgb(206, 206, 206);
+        }
+        .menu ul li{
+            list-style: none;
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastros</h1>
+        <nav>
+            <ul>
+                <li><a href="/paginas/dashboard.html" rel="next" target="_self">Dashboard</a></li>
+                <li><a href="/paginas/animais/animais.html" rel="next" target="_self">Animais</a></li>
+                <li><a href="/paginas/maquinas/maquinas.html" rel="next" target="_self">Máquinas</a></li>
+                <li><a href="/paginas/funcionarios/funcionarios.html" rel="next" target="_self">Funcionários</a></li>
+                <li><a href="/paginas/estoque/estoque.html" rel="next" target="_self">Estoque</a></li>
+                <li><a href="/paginas/cadastros/cadastro_menu.html" rel="next" target="_self">Cadastros</a></li>
+        </nav>
+    </header>
+    <main class="main-cadastro">
+        <div class="menu">
+            <ul>
+                <li><a href="animais_cadastro.html" class="links-cadastro">Animais</a></li>
+                <li><a href="maquinas_cadastro.html" class="links-cadastro">Máquinas</a></li>
+                <li><a href="funcionarios_cadastro.html" class="links-cadastro">Funcionários</a></li>
+                <li><a href="estoque_cadastro.html" class="links-cadastro">Estoque</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

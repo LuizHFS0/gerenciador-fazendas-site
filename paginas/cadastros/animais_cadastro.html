@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros - Animais</title>
+    <link rel="stylesheet" href="/css/cadastros.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Cadastrar Animal</h1>
+        <nav>
+            <ul>
+                <li><a href="cadastro_menu.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="formulario">
+            <h1 class="titulo-form">Cadastro de Animal</h1>
+            <div class="informacoes-animal">
+                <div class="dados-gerais">
+                    <h2>Dados Gerais</h2>
+                    <div class="campos">
+                        <label for="nome">Nome do Animal:</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <div class="campos">
+                        <label for="peso">Peso:</label>
+                        <input type="text" id="peso">
+                    </div>
+                    <div class="campos">
+                        <label for="raca">Raça:</label>
+                        <input type="text" id="raca">
+                    </div>
+                    <div class="campos">
+                        <label for="cor">Cor:</label>
+                        <input type="text" id="cor">
+                    </div>
+                    <div class="campos">
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento">
+                    </div>
+                    <div class="campos">
+                        <label>Corte ou Leite?</label>
+                        <div>
+                            <input type="radio" name="tipo"> Corte
+                            <input type="radio" name="tipo"> Leite
+                        </div>
+                    </div>
+                </div>
+                <div class="identificacao">
+                    <h2>Identificação</h2>
+                    <div class="campos">
+                        <label for="brinco">Brinco:</label>
+                        <input type="text" id="brinco">
+                    </div>
+                    <div class="campos">
+                        <label for="especie">Espécie:</label>
+                        <select id="especie">
+                            <option>Bovino</option>
+                            <option>Equino</option>
+                            <option>Suíno</option>
+                            <option>Ovino</option>
+                            <option>Caprino</option>
+                        </select>
+                    </div>
+                    <div class="campos">
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo">
+                            <option>Macho</option>
+                            <option>Fêmea</option>
+                        </select>
+                    </div>
+                    <div class="campos">
+                        <label for="lote">Lote:</label>
+                        <select id="lote">
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div class="campos">
+                        <label for="status">Status:</label>
+                        <select id="status">
+                            <option>Ativo</option>
+                            <option>Tratamento</option>
+                            <option>Seca</option>
+                            <option>Prenha</option>
+                            <option>Abate</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="controle-sanitario">
+                <h2>Controle Sanitário</h2>
+            </div>
+            <div class="controle-reprodutivo">
+                <h2>Controle Reprodutivo</h2>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
